@@ -95,6 +95,27 @@ function RenderLandingPage(props) {
         <h1 className="header-bottom-section">Systemic Disparity Insights</h1>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
         {/* <div className="bottom-section">*/}
+        <div className="sub-head-bottom-section">
+          <h2>36%</h2>
+          <h2>5%</h2>
+          <h2>6x Lower</h2>
+        </div>
+        <div className="para-bottom-section">
+          <p>
+            By the end of the Trump administration, the average asylum office
+            grant rate had fallen 36 percent from an average of 44 percent in
+            fiscal year 2016 to 28 percent in fiscal year 2020.
+          </p>
+          <p>
+            The New York asylum office grant rate dropped to 5 percent in fiscal
+            year 2020.
+          </p>
+          <p>
+            Between fiscal year 2017 and 2020, the New York asylum offices's
+            average grant rate was six times lower than San Francisco asylum
+            office.
+          </p>
+        </div>
         <div className="read-more-btn-container">
           <Button
             type="default"
