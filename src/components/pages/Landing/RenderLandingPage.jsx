@@ -91,7 +91,8 @@ function RenderLandingPage(props) {
           </h3>
         </div>
       </div>
-      <div>
+      <div className="bottom-section">
+        <h1 className="header-bottom-section">Systemic Disparity Insights</h1>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
         {/* <div className="bottom-section">*/}
         <p onClick={() => scrollToTop()} className="back-to-top">
