@@ -71,8 +71,6 @@ function GraphWrapper(props) {
     axios
       .all([fiscalSummary, citizenshipResults])
       .then(result => {
-        console.log(result[0]);
-        console.log(result[1]);
         // Start finalSummary as the piece of data that has the main structure
         const finalSummary = result[0].data;
         // append citizenshipResults onto the main data structure returned above
