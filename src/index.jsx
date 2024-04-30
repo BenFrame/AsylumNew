@@ -28,21 +28,23 @@ const { primary_accent_color } = colors;
 
 const store = configureStore({ reducer: reducer });
 ReactDOM.render(
-  <Auth0Provider
-    domain="dev-e41e7vjeivxmonp6.us.auth0.com"
-    clientId="eJzZPk1JnxyDJ1nXHjpNh2j95OfWtK2a"
-    authorizationParams={{
-      redirect_uri: window.location.origin,
-    }}
-  >
-    <Router>
-      <Provider store={store}>
-        <React.StrictMode>
-          <App />
-        </React.StrictMode>
-      </Provider>
-    </Router>
-  </Auth0Provider>,
+  <Router>
+    <Auth0Provider
+      domain="dev-e41e7vjeivxmonp6.us.auth0.com"
+      clientId="eJzZPk1JnxyDJ1nXHjpNh2j95OfWtK2a"
+      authorizationParams={{
+        redirect_uri: window.location.origin,
+      }}
+    >
+      <Router>
+        <Provider store={store}>
+          <React.StrictMode>
+            <App />
+          </React.StrictMode>
+        </Provider>
+      </Router>
+    </Auth0Provider>
+  </Router>,
   document.getElementById('root')
 );
 
