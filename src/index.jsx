@@ -31,13 +31,7 @@ const { primary_accent_color } = colors;
 const store = configureStore({ reducer: reducer });
 ReactDOM.render(
   <Router>
-    <Auth0ProviderWithHistory
-      domain="dev-e41e7vjeivxmonp6.us.auth0.com"
-      clientId="eJzZPk1JnxyDJ1nXHjpNh2j95OfWtK2a"
-      authorizationParams={{
-        redirect_uri: window.location.origin,
-      }}
-    >
+    <Auth0ProviderWithHistory>
       <Router>
         <Provider store={store}>
           <React.StrictMode>

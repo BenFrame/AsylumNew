@@ -3,6 +3,10 @@ import { Image } from 'antd';
 import { Link } from 'react-router-dom';
 import Logo from '../../styles/Images/WhiteLogo.png';
 import { colors } from '../../styles/data_vis_colors';
+// import LoginButton from '../common/login-button';
+// import AuthenticationButton from '../common/authentication-button';
+import AuthNav from '../../components/common/auth-nav';
+import SignupButton from '../../components/common/signup-button';
 
 const { primary_accent_color } = colors;
 
@@ -29,6 +33,8 @@ function HeaderContent() {
           Graphs
         </Link>
       </div>
+      <SignupButton />
+      <AuthNav />
     </div>
   );
 }
