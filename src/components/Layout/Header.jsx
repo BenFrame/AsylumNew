@@ -39,7 +39,9 @@ function HeaderContent() {
       <AuthNav />
       {isAuthenticated && (
         <div>
-          <Link to="/profile">Profile</Link>
+          <Link to="/profile" style={{ color: '#E2F0F7' }}>
+            Profile
+          </Link>
         </div>
       )}
     </div>
