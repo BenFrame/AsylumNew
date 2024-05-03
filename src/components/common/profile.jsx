@@ -2,7 +2,16 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const Profile = () => {
-  const { user } = useAuth0();
+  const { isLoading, isAuthenticated, user } = useAuth0();
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!isAuthenticated) {
+    return <div>Please log in to view your profile</div>;
+  }
+
   const { name, picture, email } = user;
 
   return (
