@@ -36,14 +36,26 @@ function HeaderContent() {
         </Link>
       </div>
 
-      <AuthNav />
-      {isAuthenticated && (
-        <div>
-          <Link to="/profile" style={{ color: '#E2F0F7' }}>
-            Profile
-          </Link>
-        </div>
-      )}
+      <div
+        style={{
+          display: 'flex',
+        }}
+      >
+        {isAuthenticated && (
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <Link to="/profile" style={{ color: '#E2F0F7' }}>
+              Profile
+            </Link>
+          </div>
+        )}
+        <AuthNav />
+      </div>
     </div>
   );
 }

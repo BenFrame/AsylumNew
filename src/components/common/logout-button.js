@@ -13,6 +13,7 @@ const LogoutButton = () => {
         color: '#E2F0F7',
         backgroundColor: primary_accent_color,
         border: 'none',
+        cursor: 'pointer',
       }}
       onClick={() =>
         logout({

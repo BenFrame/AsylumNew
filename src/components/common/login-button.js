@@ -13,6 +13,7 @@ const LoginButton = () => {
         color: '#E2F0F7',
         backgroundColor: primary_accent_color,
         border: 'none',
+        cursor: 'pointer',
       }}
       onClick={() => loginWithRedirect()}
     >
